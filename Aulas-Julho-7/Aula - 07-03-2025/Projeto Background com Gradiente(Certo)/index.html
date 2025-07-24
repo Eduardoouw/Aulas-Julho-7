@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gerador de Gradiente</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>🌈 Gerador de Gradiente 🌈</h1>
+        <div class="controls">
+            <label>Cor 1:
+                <input type="color" id="color1" value="#FF0000" />
+            </label>
+            <label>Cor 2:
+                <input type="color" id="color2" value="#0000ff" />
+            </label>
+            <label>Direção:
+                <select id="direction">
+                    <option value="to right">➡️ Direita</option>
+                    <option value="to left">⬅️ Esquerda</option>
+                    <option value="to bottom">⬇️ Baixo</option>
+                    <option value="to top">⬆️ Cima</option>
+                    <option value="135deg">↘️ Diagonal</option>
+                    <option value="225deg">↖️ Diagonal</option>
+                </select>
+            </label>
+        </div>
+        
+        <div id="previewBox">preview</div>
+        <span id="cssOutput"></span>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+:root {
+    --bg: #eee;
+    --card: #ffffff;
+    --text: #000000;
+    --border: #000000;
+    --focus: #007bff;
+}
+
+body.dark {
+    --bg: #121212;
+    --card: #2c2929;
+    --text: #ffffff;
+    --border: #ffffff;
+    --focus: #66b3ff;
+}
+
+body {
+    padding: 20px;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#img {
+    height: auto;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 1.8em;
+    margin: 0;
+    color: var(--text);
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.editable-box {
+    border: 2px solid var(--border);
+    padding: 15px;
+    min-height: 100px;
+    width: 100%;
+    max-width: 500px;
+    background: var(--card);
+    border-radius: 8px;
+    margin: 10px 0;
+    outline: none;
+    color: var(--text);
+    transition: background 2s, border-color 2s, color 3.5s;
+}
+
+.editable-box:focus {
+    border-color: var(--focus);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+body.dark .editable-box:focus {
+    box-shadow: 0 0 5px rgba(102, 179, 255, 0.5);
+}
+
+#toggleTheme {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}

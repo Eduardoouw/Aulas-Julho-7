@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #3b3c3d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #555657;
+}
+/* Estilo para o conteúdo */
+main {
+    display: flex;
+    flex: 1;
+}
+/* Estilo para o menu lateral */
+aside {
+    background-color: #3b3c3d;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px #555657;
+}
+/* Estilo para a seção de conteúdo */
+select {
+    background-color: #ecf0f1;
+    padding: 20px;
+    flex: 1;  
+}
+#mensagem {
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 150px 0px;
+  color: #463939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilo para o rodápe */
+footer {
+    background-color: #34495e;
+    color: #4f76e0;
+    padding: 10px;
+    text-align: center;
+}
